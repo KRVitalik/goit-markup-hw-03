@@ -1,0 +1,189 @@
+:root {
+  --primary-text-color: #434455; /* SLATE */
+  --primary-title-color: #2e2f42; /* Navy blue */
+  --primary-brand-color: #4d5ae5; /* Iris */
+  --pressed-state-color: #404bbf; /* OCEAN */
+  --accent-color: #e7e9fc; /* cornflower */
+  --light-color-button: #f4f4fd; /* CLOUD */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+
+.logo-a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+.logo-b {
+  /* font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em; */
+  color: var(--primary-title-color);
+}
+.link {
+  color: var(--primary-text-color);
+  font-style: normal;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--pressed-state-color);
+}
+
+nav .link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
+}
+
+address .link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Секція герой */
+
+.hero {
+  background-color: var(--primary-title-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.button-order {
+  color: #ffffff;
+  background-color: var(--primary-brand-color);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.button-order:hover,
+.button-order:focus {
+  background-color: var(--pressed-state-color);
+}
+
+/* Cекція "Our advantages" */
+
+.items {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Заголовки h2 */
+
+.work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary-title-color);
+}
+
+/* Секція "Our Team" */
+
+.worker {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
+}
+
+.teem {
+  background-color: var(--light-color-button);
+}
+
+.center {
+  text-align: center;
+}
+/* footer */
+
+.slogan {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.layer {
+  background-color: var(--primary-title-color);
+}
+.layer .logo-b {
+  color: var(--light-color-button);
+}
+
+/* Portfolio button */
+
+.button {
+  color: var(--primary-brand-color);
+  background-color: var(--light-color-button);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--pressed-state-color);
+  color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
