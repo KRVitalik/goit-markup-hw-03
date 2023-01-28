@@ -56,6 +56,10 @@ img {
   padding-right: 15px;
 }
 
+.section-list {
+  padding-bottom: 120px;
+}
+
 /* Header */
 
 .logo {
@@ -81,7 +85,7 @@ img {
   display: flex;
 }
 
-.container.direction {
+.header-section {
   border-bottom: 1px solid var(--accent-color);
 }
 
@@ -167,6 +171,11 @@ address .link {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
 }
 .button-order:hover,
 .button-order:focus {
@@ -182,6 +191,10 @@ address .link {
 
 .list-container {
   padding-top: 120px;
+}
+
+.list-advantages {
+  width: 264px;
 }
 
 .list-advantages:not(:last-child) {
@@ -205,20 +218,15 @@ address .link {
 /* =======================Head h2======================= */
 
 .work {
+  margin-bottom: 72px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
 
-  padding-top: 120px;
-
   color: var(--primary-title-color);
-}
-
-.list-doing {
-  margin-top: 72px;
-  padding-bottom: 120px;
 }
 
 .work-img {
@@ -237,11 +245,10 @@ address .link {
 
 .work-teem {
   padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .center {
-  padding-bottom: 120px;
   text-align: center;
 }
 
@@ -267,14 +274,13 @@ address .link {
   color: var(--primary-title-color);
 }
 
-/* footer */
+/* ======================footer====================== */
 
 .layer {
   background-color: var(--primary-title-color);
 }
 
 .logo-footer {
-  padding-left: 156px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -292,7 +298,7 @@ address .link {
   width: 264px;
 }
 
-/* Portfolio button */
+/* ===================Portfolio button=================== */
 
 .button {
   display: flex;
@@ -331,19 +337,30 @@ address .link {
   padding-bottom: 72px;
 }
 
+/* ==================Portfolio list==================  */
+
 .flex-items {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -48px;
-  margin-left: -24px;
-  padding-bottom: 120px;
 }
+
+.flex-items:last-child {
+  justify-content: flex-start;
+}
+/* :last-child - додав для кращого візуалу, якщо не буде по три в ряд */
 
 .flex-list {
   justify-content: space-between;
   margin-left: 24px;
   margin-top: 48px;
-  width: calc(100% / 3 - 48px);
+}
+
+.flex-list:nth-child(-n + 3) {
+  margin-top: 0;
+}
+
+.flex-list:nth-child(3n + 1) {
+  margin-left: 0;
 }
 
 .flex-text {
